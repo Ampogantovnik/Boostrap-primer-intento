@@ -1,0 +1,163 @@
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+.img-fluid {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 0ch;
+  padding: 0%;
+  margin: 0%;
+  height: 25rem;
+  width: 100%;
+}
+
+section {
+  border: 0rem;
+  margin: 0%;
+  padding: 0%;
+  background-color: black;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 50% 25%;
+      grid-template-columns: 25% 50% 25%;
+  grid-column-gap: 1p;
+      grid-template-areas: ". Texto .";
+}
+
+section section div {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: Texto;
+}
+
+section section div section div p {
+  color: antiquewhite;
+}
+
+footer {
+  border: 0px;
+  background-color: black;
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 10rem;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.33fr 0.33fr 0.33fr;
+      grid-template-columns: 0.33fr 0.33fr 0.33fr;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+      grid-template-areas: " . Links Whatsapp";
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footersection {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: Whatsapp;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+footersection section img {
+  -webkit-animation-name: LogoWpp;
+          animation-name: LogoWpp;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  width: 35px;
+  height: 35px;
+}
+
+@-webkit-keyframes LogoWpp {
+  0% {
+    width: 35px;
+    height: 35px;
+  }
+  50% {
+    width: 50px;
+    height: 50px;
+  }
+  100% {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@keyframes LogoWpp {
+  0% {
+    width: 35px;
+    height: 35px;
+  }
+  50% {
+    width: 50px;
+    height: 50px;
+  }
+  100% {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+footer div {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: Links;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer div div a {
+  color: antiquewhite;
+  text-decoration: none;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: Links;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer div div a div a img {
+  height: 20px;
+  width: 20px;
+}
+/*# sourceMappingURL=main.css.map */

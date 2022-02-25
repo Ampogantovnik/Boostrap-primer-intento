@@ -1,0 +1,20 @@
+section {
+    border: 0rem;
+    margin: 0%;
+    padding: 0%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-column-gap: 1p;
+    grid-template-areas: ". Texto .";
+
+    section div {
+        grid-area: Texto;
+
+        section div p {
+
+            color: antiquewhite;
+
+        }
+    }
+}

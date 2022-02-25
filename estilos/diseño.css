@@ -1,0 +1,88 @@
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+.img-fluid{
+    object-fit: cover;
+    border: 0ch;
+    padding: 0%;
+    margin: 0%;
+    height: 25rem;
+    width: 100%;
+}
+section {
+    border: 0rem;
+    margin: 0%;
+    padding: 0%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-column-gap: 1p;
+    grid-template-areas: ". Texto ." ;
+}
+section div {
+    grid-area: Texto;
+}
+section div p {
+ 
+    color: antiquewhite;
+
+}
+footer div a {
+    color: antiquewhite;
+    text-decoration: none;
+    grid-area: Links;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+footer div {
+    grid-area: Links;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer section{
+    grid-area: Whatsapp;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+footer section img{
+    animation-name: LogoWpp;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    width: 35px;
+    height: 35px;
+
+}
+@keyframes LogoWpp {
+    0%{ width: 35px;
+        height: 35px;}
+    50%{ width: 50px;
+        height: 50px;}
+    100%{ width: 35px;
+        height: 35px;}
+}
+footer {
+  border: 0px;
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    height: 10rem;
+    display: inline-grid;
+    display: grid;
+    grid-template-columns: 0.33fr 0.33fr 0.33fr;
+    grid-template-rows: 100%;
+    grid-template-areas: " . Links Whatsapp";
+    justify-content: center;
+    align-items: center;
+}
+footer div a img {
+    height: 20px;
+    width: 20px;
+}
